@@ -1,11 +1,11 @@
-  applications:
+ applications:
   - name: onlinecourse
     routes:
-      - route: host.domain
-    memory: 128M
+      - route: adean.mybluemix.net
+    memory: 256M
     buildpack: python_buildpack
   - name: onlinecourse-nginx
     routes:
       - route: host.domain/static
-    memory: 128M
+    memory: 256M
     buildpack: staticfile_buildpack
